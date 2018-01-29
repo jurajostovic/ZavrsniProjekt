@@ -1,0 +1,536 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+	font-size: 17pt;
+}
+
+.header {
+	height: 352px;
+	background: url('img/header.jpg') no-repeat;
+	background-size: cover;
+	transition: 0.5s ease-in-out;
+	animation-name: zoom3;
+    animation-duration: 20s;
+}
+
+@keyframes zoom3 {
+    from {
+		background-position: center;
+	} 
+    to {
+		background-position: top;
+	}
+}
+
+
+.header a {
+	font-size: 24pt;
+	text-align: right;
+	color: #fff;
+	margin-top: 315px;
+	margin-left: 50px;
+	display: block;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.5s ease-in-out;
+}
+
+.header:hover {
+	background-color: white;
+	transition: 3s;
+}
+
+@media screen and (max-width:950px) {
+	.header {
+		height: 200px;
+	}
+	.header a {
+		margin-top: 160px;
+	}
+}
+
+.header1 {
+	height: 352px;
+	background: url('img/header1.png') no-repeat;
+	background-size: cover;
+	background-color: #10ADE5;
+    background-blend-mode: multiply;
+	background-position: center center;
+	transition: 1s ease-in-out;
+}
+.header1 a {
+	font-family: 'Raleway', sans-serif;
+		transition: 0.5s ease-in-out;
+}
+
+.header1 ul a{
+	font-size: 14pt;
+	color: #fff;
+	margin-left: 50px;
+	display: block;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.5s ease-in-out;
+
+    animation-duration: 4s;
+}
+
+@keyframes zoom1 {
+    from {background-position: top;
+	background-color: white;} 
+    to {background-position: center center;
+	background-color: #8A57EB}
+}
+
+.header1 ul {
+	width: 400px
+}
+
+@media screen and (max-width:950px) {
+	.header1 {
+	height: 200px;
+	}
+	.header1 ul {
+	width: 300px
+}
+}
+
+.header2 {
+	height: 352px;
+	background: url('img/header2.png') no-repeat;
+	background-size: cover;
+    background-blend-mode: multiply;
+	background-color: #8A57EB;
+	background-position: center center;
+	opacity: 0.9;
+	transition: all 0.5s ease-in-out;
+	animation-name: zoom;
+    animation-duration: 4s;
+}
+
+@keyframes zoom {
+    from {background-position: top;
+	background-color: white;} 
+    to {background-position: center center;
+	background-color: #8A57EB}
+}
+
+
+
+
+.header2 a {
+	font-family: 'Raleway', sans-serif;
+		transition: 0.5s ease-in-out;
+}
+
+.header2 ul a{
+	font-size: 14pt;
+	color: #fff;
+	margin-left: 50px;
+	display: block;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.5s ease-in-out;
+}
+
+
+
+.header2 ul {
+	width: 400px
+}
+
+
+@media screen and (max-width:950px) {
+	.header2 {
+	height: 200px;
+	}
+	.header2 ul {
+	width: 300px
+}
+}
+
+.header3 {
+	height: 352px;
+	background: url('img/header3.png') no-repeat;
+	background-size: cover;
+	opacity: 0.7;
+	background-color: #37EC3E;
+    background-blend-mode: multiply;
+	background-position: center center;
+	transition: 0.5s ease-in-out;
+	animation-name: zoom2;
+    animation-duration: 7s;
+}
+@keyframes zoom2 {
+    from {background-position: bottom;
+	background-color: white;} 
+    to {background-position: center center;
+	background-color: #37EC3E;}
+}
+
+
+
+.header3 a {
+	font-family: 'Raleway', sans-serif;
+	transition: 0.5s ease-in-out;
+}
+
+.header3 ul a{
+	font-size: 14pt;
+	color: #fff;
+	margin-left: 50px;
+	display: block;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+		transition: 0.5s ease-in-out;
+}
+.header3 ul {
+	width: 400px
+}
+
+@media screen and (max-width:950px) {
+	.header3 {
+		height: 200px;
+	}
+}
+	
+	
+.square-blocks h1 {
+	font-size: 27pt;
+	font-family: 'Raleway', sans-serif;
+}
+.square-blocks div {
+	height: 70px;
+	padding-left: 40pt;
+}
+
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 23pt;
+}
+
+.square-blocks a {
+	color: #000;
+}
+.square-blocks a:hover {
+	color: #7788FF;
+	text-decoration: none;
+}
+
+@media screen and (max-width:1050px) {
+	
+
+	.square-blocks div.visak {
+		 display: none;
+	}
+}
+
+
+
+.razmak {
+	padding-bottom: 25px;
+}
+
+.main-menu{
+	padding-left: 0px;
+}
+
+.main-menu li {
+	display: inline-block;
+	height: 664px;
+	width: 32%;
+}
+
+.main-menu li a{
+	color: white;
+	font-size: 22pt;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100px;
+	display: block;
+	height: 664px;
+	font-size: 24pt;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.main-menu a:hover {
+	text-decoration: none;
+}
+
+.omeni {
+	background: url('img/omeni.png') no-repeat;
+	background-size: cover;	
+	margin-right: 15px;
+	background-color: #8A57EB;
+    background-blend-mode: multiply;
+	opacity: 0.9;
+	transition: 0.5s ease-in-out;
+}
+
+.omeni:hover{
+	background: url('img/omenib.png') no-repeat;
+	background-size: cover;	
+	background-color: white;
+    background-blend-mode: multiply;
+	opacity: 1;
+	transition: 5s ease;
+}
+
+.galerija {
+	background: url('img/galerija.png') no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+	background-color: #37EC3E;
+    background-blend-mode: multiply;
+	opacity: 0.8;
+	transition: 0.5s ease-in-out;
+}
+
+.galerija:hover{
+	background: url('img/galerijab.png') no-repeat;
+	background-size: cover;
+	background-color: white;
+    background-blend-mode: multiply;
+	filter: blur(2px);
+	opacity: 1;
+	transition: 5s ease;
+}
+
+.kontakt {
+	background: url('img/kontakt.png') no-repeat;
+	background-size: cover;
+	background-color: #10ADE5;
+    background-blend-mode: multiply;
+	transition: 0.5s ease-in-out;
+}
+
+.kontakt:hover{
+	background: url('img/kontaktb.png') no-repeat;
+	background-size: cover;
+	background-color: white;
+    background-blend-mode: multiply;
+	opacity: 1;
+	transition: 5s ease;
+
+}
+
+
+
+@media screen and (max-width:1100px) {
+	.omeni {
+		margin-right: 7px;
+	}
+	.galerija {
+		margin-right: 7px;
+	}
+		
+}
+@media screen and (max-width:700px) {
+	.main-menu li{
+		display: block;
+		width: 93%;
+		height: 250px;
+	}
+	.main-menu a{
+		height: 250px;
+	}
+	.omeni {
+		margin-right: 0px;
+	}
+	.galerija {
+		margin-right: 0px;
+	}
+}
+
+
+
+
+.contact-form{
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 24pt;
+	margin-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.poruka{
+	height: 173px;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #000;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0;
+}
+.btn-default {
+	border: 0;
+}
+
+@media screen and (max-width:760px) {
+	.contact-form {
+		padding: 30px;
+	}
+	p {
+		padding: 30px;
+	}
+}
+
+.main-menub {
+	width: 100%;
+    float: right;
+}
+.main-menub li {
+	display: block;
+	height: 90px;
+	transition: 1s ease;
+}
+.main-menub li a {
+	color: #FFF;
+	font-size: 14pt;
+	padding-left: 45px;
+	padding-right: 25px;
+	line-height: 100px;
+	display: block;
+}
+.main-menub li:hover {
+	background-color: white;
+	transition: 1s;
+}
+.main-menub li:hover a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+@media screen and (max-width:950px) {
+	.main-menub li {
+	display: block;
+	height: 50px;
+	transition: 1s;
+}
+.main-menub li a {
+	color: #FFF;
+	text-align: center;
+	font-size: 13pt;
+	padding-left: 45px;
+	padding-right: 25px;
+	line-height: 50px;
+	display: block;
+}
+
+}
+
+
+.gallery div {
+	padding: 0;
+	border: 4px solid white;
+
+}
+
+.overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;	
+	bottom: 0;
+	opacity: 0;
+	transition: 2s ease;
+
+
+}
+
+.slika1 {
+		background: url('img/slika1.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+.slika2 {
+		background: url('img/slika2.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+.slika3 {
+		background: url('img/slika3.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+.slika4 {
+		background: url('img/slika4.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+.slika5 {
+		background: url('img/slika5.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+.slika6 {
+		background: url('img/slika6.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+.slika7 {
+		background: url('img/slika7.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+.slika8 {
+		background: url('img/slika8.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+.slika9 {
+		background: url('img/slika9.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+}
+
+
+.image-container {
+	height: 550px;
+	border-right: 100;
+	border-left: 100;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.3;
+	background-color: white;
+}
+
+.image-container:hover{
+	filter: blur(2px);
+}
+
+@media screen and (max-width:1150px) {
+	.image-container {
+	height: 350px;
+}
+}
+
+
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Juraj Ostović - Galerija</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="lightbox/css/lightbox.css" rel="stylesheet">		
+		<link href="socicon/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">		
+	</head>
+	
+	<body>
+		<div>
+				<div class="section">
+				<div class="row square-blocks">
+				
+					<div class="col-sm-6 col-md-9">
+						
+							<h1>Galerija</h1>
+						
+					</div>
+					<div class="col-sm-6 col-md-1 visak">
+						<p>
+							<a href="http://www.facebook.com/juraj.ostovic" target="_blank">
+								<span class="socicon-facebook"></span>
+							</a>
+						</p>
+					</div>
+					<div class="col-sm-6 col-md-1 visak">
+						<p>
+							<a href="https://twitter.com/shakira?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+								<span class="socicon-twitter"></span>
+							</a>
+						</p>
+					</div>
+					<div class="col-sm-6 col-md-1 visak">
+						<p>
+							<a href="https://www.instagram.com/bradpittoficial/?hl=en" target="_blank">
+								<span class="socicon-instagram"></span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="row">
+				<div class="col-xs-12 header3">
+					<ul class="main-menub">
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="omeni.html">O meni</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 razmak">
+				</div>
+			</div>
+				
+				<div>
+				<div class="row gallery">
+					<div class="col-xs-12 col-sm-8 image-container slika1">
+						<a href="img/slika1.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 image-container slika2">
+						<a href="img/slika2.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 image-container slika3">
+						<a href="img/slika3.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 image-container slika4">
+						<a href="img/slika4.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-3 image-container slika5">
+						<a href="img/slika5.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-9 image-container slika6">
+						<a href="img/slika6.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 image-container slika7">
+						<a href="img/slika7.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 image-container slika8">
+						<a href="img/slika8.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 image-container slika9">
+						<a href="img/slika9.png" data-lightbox="g1"><div class="overlay">
+						</div>
+						</a>
+					</div>
+					</div>
+				</div>
+				
+			
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="lightbox/js/lightbox.js"></script>
+		<script src="vegas/vegas.min.js"></script>
+		<script>
+			$("#vegas").vegas({
+				slides: [
+					{ src: "img/slika1.pmg" },
+					{ src: "img/slika2.pmg" },
+					{ src: "img/slika3.pmg" },
+					{ src: "img/slika4.pmg" },
+					{ src: "img/slika5.pmg" },
+					{ src: "img/slika6.pmg" },
+					{ src: "img/slika7.pmg" },
+					{ src: "img/slika8.pmg" },
+					{ src: "img/slika9.pmg" }
+				]
+			});			
+		</script>
+		<script>
+		  $('.tile')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // some text just to show zoom level on current item in this example
+        .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+	</script>
+		
+	</body>
+</html>
